@@ -22,19 +22,26 @@ public class SpeedyTiltShift {
         //cannot write to input Bitmap, since it may be immutable
         //if you try, you may get a java.lang.IllegalStateException
 
-        Log.i("TILTSHIFT_JAVA","hey1:"+input.getWidth()+","+input.getHeight());
+        Log.i("TILTSHIFT_JAVA","Started:"+input.getWidth()+","+input.getHeight());
 
         int[] pixels = new int[input.getHeight()*input.getWidth()];
         int[] pixelsOut = new int[input.getHeight()*input.getWidth()];
         float sigma;
+        int a4=0, count=0, flag=0;
         double[] kernelMatrix;
         input.getPixels(pixels,0,input.getWidth(),0,0,input.getWidth(),input.getHeight());
+        Log.d("TILTSHIFT_JAVA","a0:"+a0+", a1:"+a1+", a2:"+a2+", a3:"+a3);
         for (int i=0; i<input.getHeight(); i++){
             sigma= meteor.asu.edu.speedytiltshift.TiltShiftJava.getSigma(i,a0,a1,a2,a3,sigma_far,sigma_near);
             Log.i("Info","sigma,i"+sigma+","+i);
-            //if(sigma<=0.7) continue;        //Gaussian blur not required if sigma is less than 0.7
-            if(i>=a1 &&  i<=a2)
-            continue;
+            if(sigma<=0.53){
+                if(flag==0) {
+                    a4 = i;
+                    flag=1;
+                }
+                count++;
+                continue;        //Gaussian blur not required if sigma is less than 0.53
+            }
             int[] k= meteor.asu.edu.speedytiltshift.TiltShiftJava.getK(sigma);     //calculating radius vector
             kernelMatrix = meteor.asu.edu.speedytiltshift.TiltShiftJava.GaussianWeightCalculator(k, sigma);
 
@@ -49,9 +56,12 @@ public class SpeedyTiltShift {
                 pixelsOut[i * input.getWidth() + x] = color;
             }
         }
+        int[] pixels1 = new int[count*input.getWidth()];
         outBmp.setPixels(pixelsOut,0,input.getWidth(),0,0,input.getWidth(),input.getHeight());
-        //outBmp.setPixels(pixelsOut,a1,input.getWidth(),0,a2,input.getWidth(),a2-a1);
-        Log.i("TILTSHIFT_JAVA","hey2");
+        input.getPixels(pixels1,0,input.getWidth(),0,a4-3,input.getWidth(),count);
+        outBmp.setPixels(pixels1,0,input.getWidth(),0,a4-3,input.getWidth(),count);
+        
+        Log.i("TILTSHIFT_JAVA","Finished");
         long javaEnd = System.currentTimeMillis();  //end time
         javaElapsedTime = javaEnd - javaStart;   //elapsed time calculation
         return outBmp;
