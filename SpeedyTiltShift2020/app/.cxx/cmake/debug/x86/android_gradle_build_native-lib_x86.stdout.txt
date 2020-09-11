@@ -1,0 +1,2 @@
+ninja: Entering directory `E:\OneDrive - Arizona State University\ASU\Classes\Mobile System Architecture\SpeedyTiltShift2020\app\.cxx\cmake\debug\x86'
+ninja: no work to do.

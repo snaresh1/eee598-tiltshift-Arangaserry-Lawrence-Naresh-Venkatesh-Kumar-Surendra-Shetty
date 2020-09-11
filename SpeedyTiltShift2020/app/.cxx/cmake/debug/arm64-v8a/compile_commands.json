@@ -1,0 +1,13 @@
+[
+{
+  "directory": "E:/OneDrive - Arizona State University/ASU/Classes/Mobile System Architecture/SpeedyTiltShift2020/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\Administer\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android24 --gcc-toolchain=C:/Users/Administer/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Administer/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\cpufeatures.dir\\ee7f7648d2014291c6e4f5f76f241258\\ndk\\21.0.6113669\\sources\\android\\cpufeatures\\cpu-features.c.o   -c C:\\Users\\Administer\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures\\cpu-features.c",
+  "file": "C:\\Users\\Administer\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures\\cpu-features.c"
+},
+
+{
+  "directory": "E:/OneDrive - Arizona State University/ASU/Classes/Mobile System Architecture/SpeedyTiltShift2020/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\Administer\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android24 --gcc-toolchain=C:/Users/Administer/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Administer/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -IC:/Users/Administer/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -mfpu=neon -o CMakeFiles\\native-lib.dir\\src\\main\\cpp\\native-lib.cpp.o -c \"E:\\OneDrive - Arizona State University\\ASU\\Classes\\Mobile System Architecture\\SpeedyTiltShift2020\\app\\src\\main\\cpp\\native-lib.cpp\"",
+  "file": "E:/OneDrive - Arizona State University/ASU/Classes/Mobile System Architecture/SpeedyTiltShift2020/app/src/main/cpp/native-lib.cpp"
+}
+]

@@ -1,0 +1,7 @@
+Executable : C:\Users\Administer\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+E:\OneDrive - Arizona State University\ASU\Classes\Mobile System Architecture\SpeedyTiltShift2020\app\.cxx\cmake\debug\x86
+native-lib
+jvmArgs : 
+

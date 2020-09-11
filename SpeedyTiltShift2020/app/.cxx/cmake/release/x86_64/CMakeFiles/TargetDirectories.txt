@@ -1,0 +1,4 @@
+E:/OneDrive - Arizona State University/ASU/Classes/Mobile System Architecture/SpeedyTiltShift2020/app/.cxx/cmake/release/x86_64/CMakeFiles/cpufeatures.dir
+E:/OneDrive - Arizona State University/ASU/Classes/Mobile System Architecture/SpeedyTiltShift2020/app/.cxx/cmake/release/x86_64/CMakeFiles/native-lib.dir
+E:/OneDrive - Arizona State University/ASU/Classes/Mobile System Architecture/SpeedyTiltShift2020/app/.cxx/cmake/release/x86_64/CMakeFiles/edit_cache.dir
+E:/OneDrive - Arizona State University/ASU/Classes/Mobile System Architecture/SpeedyTiltShift2020/app/.cxx/cmake/release/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,9 @@
+# ninja log v5
+26	747	620972551	CMakeFiles/cpufeatures.dir/7fbd4e6edd9df6bef5b136b1d017b723/Sdk/ndk/21.0.6113669/sources/android/cpufeatures/cpu-features.c.o	f8b79f7d9c62fb6f
+1	1395	620972552	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	f5d86ebeb823a7b7
+750	2461	620972553	libcpufeatures.a	b041c95ecd1ffc7f
+2461	2858	620972553	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	2a252116b0e97b09
+30	988	620973456	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	f5d86ebeb823a7b7
+988	1302	620973456	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	2a252116b0e97b09
+7	1246	620973510	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	f5d86ebeb823a7b7
+1246	1915	620973511	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	2a252116b0e97b09
